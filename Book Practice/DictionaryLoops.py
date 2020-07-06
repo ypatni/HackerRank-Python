@@ -19,6 +19,17 @@ users = { 'aeinstein': {
 }
 for username, user_info in users.items():
     print(f"\nUsername: {username}")
-    full_name = f"{user_info['first']} {user_info['last']}" location = user_info['location']
-    print(f"\tFull name: {full_name.title()}") print(f"\tLocation: {location.title()}")
+    full_name = f"{user_info['first']} {user_info['last']}" 
+    location = user_info['location']
+    print(f"\tFull name: {full_name.title()}") 
+    print(f"\tLocation: {location.title()}")
 
+#3
+favorite_cities = {
+    'evan' : ['london' , 'new york city'],
+    'yash' : ['mumbai', 'philly']
+}
+for name in favorite_cities.keys():
+    print(f"{name.title()}'s favorite cities are: ")
+    for cities in favorite_cities[name]:
+        print("\t" + cities.title())
