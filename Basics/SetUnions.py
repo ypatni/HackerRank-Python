@@ -12,3 +12,11 @@ y = int(input())
 set2 = set(list(map(int, input().split())))
 x = set1.intersection(set2)
 print(len(x))
+
+#difference
+x = int(input())
+set1 = set(list(map(int, input().split())))
+y = int(input())
+set2 = set(list(map(int, input().split())))
+x = set1.difference(set2)
+print(len(x))
